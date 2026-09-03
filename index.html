@@ -347,8 +347,12 @@
     border:1px solid var(--border);
     padding:3px 8px;
     border-radius:3px;
+    text-decoration:none;
+    display:inline-block;
   }
   .tag.horror{ color:var(--blood); background:var(--blood-wash); border-color:transparent; }
+  a.tag:hover{ color:var(--frost); border-color:var(--frost-soft); }
+  .venture-single{ max-width:560px; }
 
   /* ventures */
   .venture-grid{
@@ -394,7 +398,11 @@
     border:1px solid var(--border);
     padding:6px 12px;
     border-radius:3px;
+    text-decoration:none;
+    display:inline-block;
+    transition:color .2s ease, border-color .2s ease;
   }
+  a.chip:hover{ color:var(--frost); border-color:var(--frost-soft); }
 
   /* path / education */
   .path{
@@ -633,7 +641,7 @@
       <div class="section-head">
         <p class="eyebrow">03 — Web &amp; Ventures</p>
         <h2>Outside the Game Loop</h2>
-        <p>The platform and the side venture that run alongside the games.</p>
+        <p>The platform and the side venture that run alongside the games — plus who helps make them happen.</p>
       </div>
       <div class="venture-grid reveal">
         <div class="venture-card">
@@ -647,6 +655,18 @@
           <h3>PixelBeadCo</h3>
           <p>A perler bead keychain business on Etsy — pixel art made physical. Same low-res, high-craft instinct as the games, just made of beads instead of sprites.</p>
           <div class="tags"><span class="tag">Etsy</span><span class="tag">Handmade</span></div>
+        </div>
+      </div>
+
+      <p class="subhead">Who I Work With</p>
+      <div class="venture-card venture-single reveal">
+        <p class="kicker">Collaborator</p>
+        <h3>Zebonastic, with nikbearbrown</h3>
+        <p>Zebonastic is a two-person effort — built and run together with nikbearbrown.</p>
+        <div class="tags">
+          <a class="tag" href="https://github.com/nikbearbrown" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="tag" href="https://www.youtube.com/@Zebonastic" target="_blank" rel="noopener">YouTube ↗</a>
+          <a class="tag" href="https://games.zebonastic.com/" target="_blank" rel="noopener">games.zebonastic.com ↗</a>
         </div>
       </div>
     </div>
@@ -737,8 +757,16 @@
       <div class="contact-links">
         <a class="btn btn-primary" href="mailto:seth.brown.gaming@gmail.com">seth.brown.gaming@gmail.com</a>
         <a class="btn btn-ghost" href="https://github.com/sethbrowngaming-rgb" target="_blank" rel="noopener">GitHub ↗</a>
-        <a class="btn btn-ghost" href="https://o2cool168.itch.io/" target="_blank" rel="noopener">itch.io ↗</a>
-        <a class="btn btn-ghost" href="https://scratch.mit.edu/users/O2cool168/" target="_blank" rel="noopener">Scratch ↗</a>
+      </div>
+      <p class="subhead" style="margin-top:34px;">Elsewhere</p>
+      <div class="chip-row">
+        <a class="chip" href="https://o2cool168.itch.io/" target="_blank" rel="noopener">itch.io</a>
+        <a class="chip" href="https://scratch.mit.edu/users/O2cool168/" target="_blank" rel="noopener">Scratch</a>
+        <a class="chip" href="https://substack.com/@sethbrown181924?r=7nv1rk&amp;utm_campaign=profile&amp;utm_medium=profile-page" target="_blank" rel="noopener">Substack</a>
+        <a class="chip" href="https://www.youtube.com/channel/UCqJ-_Un7PI4blrwkA__tqbg" target="_blank" rel="noopener">YouTube</a>
+        <a class="chip" href="https://www.instagram.com/sethb16o8/" target="_blank" rel="noopener">Instagram</a>
+        <a class="chip" href="https://www.facebook.com/profile.php?id=61586117158722" target="_blank" rel="noopener">Facebook</a>
+        <a class="chip" href="https://www.tiktok.com/@sethb16o8" target="_blank" rel="noopener">TikTok</a>
       </div>
     </div>
   </section>
