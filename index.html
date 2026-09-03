@@ -337,6 +337,7 @@
   }
   .pill-shipped{ color:var(--frost); background:var(--frost-wash); border-color:var(--frost-soft); }
   .pill-dev{ color:var(--ember); background:var(--ember-wash); border-color:var(--ember-soft); }
+  .pill-test{ color:var(--text-muted); background:var(--bg-elevated-2); border-color:var(--border); }
   .tags{ display:flex; flex-wrap:wrap; gap:6px; }
   .tag{
     font-family:var(--mono);
@@ -506,8 +507,9 @@
       <div class="hud-row">
         <span class="hud-item">STUDIO <b>O2cool168</b></span>
         <span class="hud-item">SHIPPED <b>4 titles</b></span>
-        <span class="hud-item">IN DEV <b>2 titles</b></span>
-        <span class="hud-item">STACK <b>Godot · Unity · Roblox · Next.js</b></span>
+        <span class="hud-item">IN PROGRESS <b>4 titles</b></span>
+        <span class="hud-item">NEXT <b>Steam</b></span>
+        <span class="hud-item">ALSO ON <b>itch.io · Scratch</b></span>
       </div>
     </div>
   </section>
@@ -529,16 +531,18 @@
           </div>
           <div class="id-stats">
             <div class="id-stat"><span class="k">Studio</span><span class="v">O2cool168</span></div>
+            <div class="id-stat"><span class="k">Platforms</span><span class="v">Google Play · itch.io · Scratch</span></div>
             <div class="id-stat"><span class="k">Web platform</span><span class="v">Zebonastic</span></div>
             <div class="id-stat"><span class="k">Focus</span><span class="v">Survival &amp; horror</span></div>
             <div class="id-stat"><span class="k">Engines</span><span class="v">Godot · Unity · Roblox</span></div>
             <div class="id-stat"><span class="k">Education</span><span class="v">CS @ Snow College</span></div>
-            <div class="id-stat"><span class="k">Status</span><span class="v">Shipping</span></div>
+            <div class="id-stat"><span class="k">Next</span><span class="v">Steam — in progress</span></div>
           </div>
         </div>
         <div class="about-copy reveal">
           <p>I'm an indie game developer publishing under the studio name <strong>O2cool168</strong> on Google Play, with a soft spot for the genre where a cold environment and a single warm light source do most of the storytelling — survival and horror. My first shipped title, <strong>COLD</strong>, started life as a Scratch project before I rebuilt it in Godot 4 and took it through Google Play's full publishing pipeline: AdMob, a privacy policy, and the Data Safety declarations most solo devs dread.</p>
           <p>Alongside games, I build the platforms and infrastructure around them — <strong>Zebonastic</strong> is a Next.js site I write game-dev articles and build template tooling for, hosted straight off GitHub Pages. I'm currently studying Computer Science, starting at Snow College this fall before transferring to the University of Utah to finish my bachelor's degree.</p>
+          <p>My games are scattered across <strong>Google Play</strong>, <strong>itch.io</strong>, and <strong>Scratch</strong> — Scratch is where most of these prototypes actually started — and a <strong>Steam</strong> release is next on the roadmap.</p>
         </div>
       </div>
     </div>
@@ -549,16 +553,22 @@
       <div class="section-head">
         <p class="eyebrow">02 — Games</p>
         <h2>Shipped &amp; In Development</h2>
-        <p>Four titles live on Google Play and the web, two more currently in the workshop.</p>
+        <p>Four titles live in Production on Google Play, two more are working through testing, two are earlier-stage builds, and a Steam release is next on the list.</p>
       </div>
 
-      <p class="subhead">Shipped</p>
+      <p class="subhead">Shipped — Production</p>
       <div class="card-grid reveal">
         <div class="game-card">
           <span class="pill pill-shipped">Shipped</span>
           <h3>COLD</h3>
           <p>A cold-weather survival game, rebuilt from a Scratch prototype into Godot 4 and taken through full Google Play publishing — AdMob, privacy policy, Data Safety.</p>
           <div class="tags"><span class="tag">Godot 4</span><span class="tag">Android</span><span class="tag">Survival</span></div>
+        </div>
+        <div class="game-card">
+          <span class="pill pill-shipped">Shipped</span>
+          <h3>Cold Signal</h3>
+          <p>The newest entry in the Cold lineup, live on Google Play.</p>
+          <div class="tags"><span class="tag">Android</span><span class="tag">Survival</span></div>
         </div>
         <div class="game-card">
           <span class="pill pill-shipped">Shipped</span>
@@ -572,11 +582,21 @@
           <p>An idle/clicker game about building up a base one tap at a time — published on Google Play.</p>
           <div class="tags"><span class="tag">Android</span><span class="tag">Idle</span></div>
         </div>
-        <div class="game-card">
-          <span class="pill pill-shipped">Shipped</span>
+      </div>
+
+      <p class="subhead">In Testing</p>
+      <div class="card-grid reveal">
+        <div class="game-card dev">
+          <span class="pill pill-test">Closed Testing</span>
+          <h3>Blow Things Up</h3>
+          <p>An arcade game about blowing things up, currently working through closed testing on Google Play.</p>
+          <div class="tags"><span class="tag">Android</span></div>
+        </div>
+        <div class="game-card dev">
+          <span class="pill pill-test">Internal Testing</span>
           <h3>SpongeBob: Bubble Odyssey</h3>
-          <p>A browser platformer built for the web, no install required.</p>
-          <div class="tags"><span class="tag">HTML5</span><span class="tag">Web</span><span class="tag">Platformer</span></div>
+          <p>A browser platformer, now going through internal testing ahead of an Android release.</p>
+          <div class="tags"><span class="tag">Web</span><span class="tag">Android</span><span class="tag">Platformer</span></div>
         </div>
       </div>
 
@@ -593,6 +613,16 @@
           <h3>Midnight Fuel</h3>
           <p>A Roblox horror game with fully scripted intro and menu systems, built in Luau.</p>
           <div class="tags"><span class="tag">Roblox</span><span class="tag">Luau</span><span class="tag horror">Horror</span></div>
+        </div>
+      </div>
+
+      <p class="subhead">Coming Next</p>
+      <div class="card-grid reveal">
+        <div class="game-card dev">
+          <span class="pill pill-test">Roadmap</span>
+          <h3>Steam</h3>
+          <p>Working toward getting a title onto Steam — the next platform on the list after Google Play, itch.io, and Scratch.</p>
+          <div class="tags"><span class="tag">Steam</span><span class="tag">In Progress</span></div>
         </div>
       </div>
     </div>
@@ -653,6 +683,12 @@
             <span class="chip">Google Play Console</span><span class="chip">AdMob</span><span class="chip">AdSense</span><span class="chip">Data Safety / Privacy Policy</span>
           </div>
         </div>
+        <div class="toolkit-group">
+          <h4>Where to Find the Games</h4>
+          <div class="chip-row">
+            <span class="chip">Google Play</span><span class="chip">itch.io</span><span class="chip">Scratch</span><span class="chip">Steam (soon)</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -701,6 +737,8 @@
       <div class="contact-links">
         <a class="btn btn-primary" href="mailto:seth.brown.gaming@gmail.com">seth.brown.gaming@gmail.com</a>
         <a class="btn btn-ghost" href="https://github.com/sethbrowngaming-rgb" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn btn-ghost" href="https://o2cool168.itch.io/" target="_blank" rel="noopener">itch.io ↗</a>
+        <a class="btn btn-ghost" href="https://scratch.mit.edu/users/O2cool168/" target="_blank" rel="noopener">Scratch ↗</a>
       </div>
     </div>
   </section>
