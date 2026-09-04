@@ -119,6 +119,18 @@
     border:1px solid var(--maroon); border-radius:8px; font-size:0.86rem; color:var(--text-muted);
   }
   .note-box b{ color:var(--text); }
+  .hours-table-wrap{ margin-top:14px; overflow-x:auto; border:1px solid var(--border); border-radius:8px; }
+  table.hours-table{ width:100%; border-collapse:collapse; font-size:0.82rem; min-width:280px; }
+  table.hours-table th, table.hours-table td{
+    padding:8px 10px; text-align:left; border-top:1px solid var(--border-soft);
+    font-variant-numeric:tabular-nums;
+  }
+  table.hours-table thead th{
+    background:var(--bg-elevated-2); font-weight:700; color:var(--text-muted);
+    font-size:0.72rem; text-transform:uppercase; letter-spacing:0.03em; border-top:none;
+  }
+  table.hours-table td:first-child{ font-weight:700; color:var(--text); white-space:nowrap; }
+  table.hours-table tbody tr:nth-child(odd){ background:var(--bg-elevated); }
 
   /* menu nav */
   .menu-jump{
@@ -232,19 +244,31 @@
     <div class="wrap about-grid">
       <div class="about-copy">
         <p class="eyebrow" style="margin-bottom:10px;">About Us</p>
-        <h2 style="font-size:1.9rem; margin-bottom:14px;">A neighborhood favorite</h2>
-        <p class="placeholder">[A short "our story" paragraph goes here — how long you've been open, what makes your kitchen's recipes special, anything you'd want a first-time visitor to know. Send it over and I'll drop it right in.]</p>
+        <h2 style="font-size:1.9rem; margin-bottom:14px;">A neighborhood favorite in Ephraim</h2>
+        <p>Los Amigos Mexican Restaurant serves family-style Mexican food in Ephraim, Utah — burritos, enchiladas, fajitas, and combination platters made to order, with a house Chile Verde that's part of the menu's backbone. Open for dine-in and takeout.</p>
+        <p class="placeholder">[Room here for more of your story — how long you've been open, what makes your kitchen's recipes special, anything you'd want a first-time visitor to know. Send it over and I'll add it in.]</p>
         <div class="note-box">
           <b>Good to know:</b> our Chile Verde is cooked with pork. Any item served "smothered" without a specified sauce will be smothered in Chile Verde by default — just let your server know if you'd like a different sauce. Items marked with an asterisk on our combination platters are filled with a chorizo-bean mix.
         </div>
       </div>
       <div class="info-card">
         <h3>Visit Us</h3>
-        <div class="info-row"><span class="k">Address</span><span class="v placeholder">[street address]</span></div>
-        <div class="info-row"><span class="k">Phone</span><span class="v placeholder">[phone number]</span></div>
-        <div class="info-row"><span class="k">Hours</span><span class="v placeholder">[general hours]</span></div>
-        <div class="info-row"><span class="k">Grill items</span><span class="v">11am–7:45pm Mon–Fri<br>11am–2:45pm Sat</span></div>
-        <div class="info-row"><span class="k">Fajitas</span><span class="v">Dine-in only</span></div>
+        <div class="info-row"><span class="k">Services</span><span class="v">Dine-in &amp; takeout<br><span class="text-faint" style="font-size:0.8rem;">No delivery</span></span></div>
+        <div class="info-row"><span class="k">Address</span><span class="v"><a href="https://maps.google.com/?q=3+E+700+S,+Ephraim,+UT+84627" target="_blank" rel="noopener">3 E 700 S<br>Ephraim, UT 84627</a></span></div>
+        <div class="info-row"><span class="k">Phone</span><span class="v"><a href="tel:+14352835675">(435) 283-5675</a></span></div>
+        <div class="hours-table-wrap">
+          <table class="hours-table">
+            <thead><tr><th>Day</th><th>Dine-In</th><th>Takeout</th></tr></thead>
+            <tbody>
+              <tr><td>Mon–Thu</td><td>11am–3pm<br>5–8pm</td><td>11am–2:45pm<br>5–7:45pm</td></tr>
+              <tr><td>Friday</td><td>11am–2:30pm<br>5–8pm</td><td>11am–2:15pm<br>5–7:45pm</td></tr>
+              <tr><td>Saturday</td><td>11am–2:30pm<br>5–8pm</td><td>11am–2:15pm<br>7:30–7:45pm</td></tr>
+              <tr><td>Sunday</td><td>Closed</td><td>Closed</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="footnote" style="margin-top:10px;">Hours can shift around holidays — call ahead to confirm.</p>
+        <div class="info-row" style="margin-top:6px;"><span class="k">Fajitas</span><span class="v">Dine-in only</span></div>
         <div class="info-row"><span class="k">Chips &amp; salsa</span><span class="v">Included with orders $9+<br>$2.00 per refill otherwise</span></div>
       </div>
     </div>
