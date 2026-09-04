@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seth Brown</title>
+<meta name="description" content="Websites by Seth Brown — personal portfolio and client projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3358856676053073" crossorigin="anonymous"></script>
+<style>
+  :root{
+    --bg:#0a0f1a; --bg-elevated:#101a2c; --border:#223251;
+    --text:#e8edf5; --text-muted:#8ea0ba;
+    --frost:#63d3d1; --frost-wash:rgba(99,211,209,0.10);
+    --display:"Big Shoulders Display", sans-serif;
+    --body:"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+    background:radial-gradient(700px 420px at 15% 0%, var(--frost-wash), transparent 55%), var(--bg);
+    color:var(--text); font-family:var(--body); padding:40px 20px;
+  }
+  .wrap{ max-width:640px; width:100%; }
+  h1{ font-family:var(--display); text-transform:uppercase; font-weight:800; font-size:clamp(2rem,7vw,3rem); margin:0 0 8px; }
+  p.lede{ color:var(--text-muted); margin:0 0 32px; }
+  .links{ display:grid; gap:14px; }
+  a.card{
+    display:block; padding:20px 22px; background:var(--bg-elevated); border:1px solid var(--border);
+    border-radius:8px; text-decoration:none; color:var(--text); transition:border-color .2s ease, transform .2s ease;
+  }
+  a.card:hover{ border-color:var(--frost); transform:translateY(-2px); }
+  a.card .name{ font-family:var(--display); text-transform:uppercase; font-weight:700; font-size:1.2rem; }
+  a.card .desc{ color:var(--text-muted); font-size:0.9rem; margin-top:4px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Seth Brown</h1>
+    <p class="lede">Websites and projects.</p>
+    <div class="links">
+      <a class="card" href="portfolio/">
+        <div class="name">Portfolio</div>
+        <div class="desc">Indie games, web projects, and the toolkit behind them.</div>
+      </a>
+      <a class="card" href="los-amigos/">
+        <div class="name">Los Amigos Mexican Restaurant</div>
+        <div class="desc">Menu and info for Los Amigos, Ephraim, UT.</div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
