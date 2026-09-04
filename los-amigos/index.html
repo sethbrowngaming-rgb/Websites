@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Los Amigos Mexican Restaurant</title>
+<meta name="description" content="Menu, prices, and information for Los Amigos Mexican Restaurant — dine-in favorites from burritos to fajitas. Browse only; call or visit to order.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3358856676053073" crossorigin="anonymous"></script>
+<style>
+  :root{
+    --bg:#1c130e;
+    --bg-elevated:#271b12;
+    --bg-elevated-2:#332417;
+    --border:#4a3624;
+    --border-soft:#382a1c;
+    --text:#f5ead9;
+    --text-muted:#c9ac8c;
+    --text-faint:#8c7057;
+    --sunset:#e2712b;
+    --sunset-deep:#b8501c;
+    --sunset-wash:rgba(226,113,43,0.12);
+    --gold:#e0a942;
+    --gold-wash:rgba(224,169,66,0.12);
+    --maroon:#973229;
+    --maroon-deep:#711f19;
+    --maroon-wash:rgba(151,50,41,0.16);
+    --shadow:0 20px 46px -22px rgba(0,0,0,0.65);
+    --display:"Yeseva One", "Georgia", serif;
+    --body:"Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *{ animation-duration:.01ms !important; transition-duration:.01ms !important; }
+  }
+  body{
+    margin:0;
+    background:
+      radial-gradient(900px 480px at 8% -8%, var(--sunset-wash), transparent 55%),
+      radial-gradient(700px 460px at 100% 0%, var(--gold-wash), transparent 55%),
+      var(--bg);
+    color:var(--text);
+    font-family:var(--body);
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{ font-family:var(--display); font-weight:400; text-wrap:balance; margin:0; color:var(--text); }
+  a{ color:var(--gold); }
+  img{ max-width:100%; }
+  .wrap{ max-width:980px; margin:0 auto; padding:0 24px; }
+  .eyebrow{
+    font-family:var(--body); font-weight:700; font-size:0.78rem; letter-spacing:0.14em;
+    text-transform:uppercase; color:var(--sunset);
+  }
+
+  /* nav */
+  header.site{
+    position:sticky; top:0; z-index:50;
+    background:rgba(28,19,14,0.9);
+    backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border-soft);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 24px; max-width:980px; margin:0 auto; gap:16px;
+  }
+  .nav .brand{
+    font-family:var(--display); font-size:1.15rem; color:var(--text);
+    text-decoration:none; white-space:nowrap;
+  }
+  .nav .brand span{ color:var(--sunset); }
+  .navlinks{
+    display:flex; gap:6px; list-style:none; margin:0; padding:0;
+    overflow-x:auto; -ms-overflow-style:none; scrollbar-width:none;
+  }
+  .navlinks::-webkit-scrollbar{ display:none; }
+  .navlinks a{
+    font-size:0.86rem; font-weight:600; color:var(--text-muted);
+    text-decoration:none; white-space:nowrap; padding:8px 12px; border-radius:20px;
+    transition:background .2s ease, color .2s ease;
+  }
+  .navlinks a:hover, .navlinks a.active{ background:var(--sunset-wash); color:var(--sunset); }
+
+  /* hero */
+  .hero{ padding:56px 0 40px; border-bottom:1px solid var(--border-soft); }
+  .hero h1{ font-size:clamp(2.6rem,7vw,4.2rem); line-height:1.02; }
+  .hero .tag{ color:var(--gold); font-family:var(--display); font-size:clamp(1rem,2.4vw,1.3rem); margin-top:10px; }
+  .hero p.lede{ max-width:58ch; color:var(--text-muted); margin-top:18px; }
+  .browse-note{
+    display:inline-flex; align-items:center; gap:10px;
+    margin-top:24px; padding:10px 16px;
+    background:var(--bg-elevated); border:1px solid var(--border);
+    border-radius:8px; font-size:0.88rem; color:var(--text-muted);
+  }
+  .browse-note b{ color:var(--gold); }
+
+  /* about */
+  section{ padding:52px 0; border-bottom:1px solid var(--border-soft); }
+  .about-grid{ display:grid; grid-template-columns:1.3fr 1fr; gap:36px; }
+  @media (max-width:760px){ .about-grid{ grid-template-columns:1fr; } }
+  .about-copy p{ color:var(--text-muted); margin:0 0 14px; }
+  .info-card{
+    background:var(--bg-elevated); border:1px solid var(--border);
+    border-radius:10px; padding:22px; box-shadow:var(--shadow);
+  }
+  .info-card h3{ font-size:1.1rem; margin-bottom:14px; }
+  .info-row{ display:flex; justify-content:space-between; gap:14px; padding:8px 0; border-top:1px dashed var(--border); font-size:0.92rem; }
+  .info-row:first-of-type{ border-top:none; }
+  .info-row .k{ color:var(--text-faint); }
+  .info-row .v{ color:var(--text); text-align:right; }
+  .placeholder{ color:var(--text-faint); font-style:italic; }
+  .note-box{
+    margin-top:18px; padding:14px 16px; background:var(--maroon-wash);
+    border:1px solid var(--maroon); border-radius:8px; font-size:0.86rem; color:var(--text-muted);
+  }
+  .note-box b{ color:var(--text); }
+
+  /* menu nav */
+  .menu-jump{
+    position:sticky; top:57px; z-index:40;
+    background:var(--bg); padding:14px 0; border-bottom:1px solid var(--border-soft);
+  }
+  .menu-jump .wrap{ display:flex; gap:8px; overflow-x:auto; -ms-overflow-style:none; scrollbar-width:none; }
+  .menu-jump .wrap::-webkit-scrollbar{ display:none; }
+  .jump-chip{
+    font-size:0.82rem; font-weight:600; white-space:nowrap;
+    padding:7px 14px; border-radius:20px; border:1px solid var(--border);
+    color:var(--text-muted); text-decoration:none; background:var(--bg-elevated);
+  }
+  .jump-chip:hover{ border-color:var(--sunset); color:var(--sunset); }
+
+  /* menu sections */
+  .menu-cat{ padding:44px 0; border-bottom:1px solid var(--border-soft); }
+  .menu-cat:last-child{ border-bottom:none; }
+  .cat-head{ margin-bottom:8px; }
+  .cat-head h2{ font-size:clamp(1.6rem,4vw,2.1rem); }
+  .cat-head .cat-note{ color:var(--text-muted); font-size:0.9rem; margin-top:6px; max-width:60ch; }
+
+  .item-list{ margin-top:22px; display:flex; flex-direction:column; }
+  .item-row{
+    display:flex; justify-content:space-between; align-items:baseline; gap:16px;
+    padding:13px 0; border-top:1px solid var(--border-soft);
+  }
+  .item-list .item-row:first-child{ border-top:none; }
+  .item-main{ flex:1; min-width:0; }
+  .item-name{ font-weight:700; color:var(--text); }
+  .item-desc{ color:var(--text-muted); font-size:0.88rem; margin-top:3px; }
+  .item-price{
+    font-variant-numeric:tabular-nums; font-weight:700; color:var(--gold);
+    white-space:nowrap;
+  }
+  .item-price small{ display:block; font-weight:500; color:var(--text-faint); font-size:0.7rem; text-align:right; }
+  .unclear{ color:var(--text-faint); font-style:italic; font-weight:500; }
+
+  /* price tables (multi-column items) */
+  .price-table-wrap{ overflow-x:auto; margin-top:20px; border:1px solid var(--border); border-radius:10px; }
+  table.price-table{
+    width:100%; border-collapse:collapse; font-size:0.92rem; min-width:520px;
+  }
+  table.price-table th, table.price-table td{
+    padding:11px 14px; text-align:right; border-top:1px solid var(--border-soft);
+    font-variant-numeric:tabular-nums; white-space:nowrap;
+  }
+  table.price-table th:first-child, table.price-table td:first-child{ text-align:left; white-space:normal; }
+  table.price-table thead th{
+    background:var(--bg-elevated-2); font-family:var(--body); font-weight:700;
+    color:var(--text-muted); font-size:0.78rem; text-transform:uppercase; letter-spacing:0.04em;
+    border-top:none;
+  }
+  table.price-table tbody tr:nth-child(odd){ background:var(--bg-elevated); }
+  table.price-table td.name{ font-weight:700; color:var(--text); }
+  table.price-table td.price{ color:var(--gold); font-weight:700; }
+
+  .callout{
+    margin-top:22px; padding:20px; background:var(--maroon-wash);
+    border:1px solid var(--maroon); border-radius:10px;
+  }
+  .callout h3{ font-family:var(--body); font-weight:700; font-size:0.95rem; color:var(--text); margin-bottom:6px; }
+  .callout p{ color:var(--text-muted); font-size:0.88rem; margin:0; }
+
+  .footnote{ margin-top:18px; font-size:0.82rem; color:var(--text-faint); }
+  .footnote + .footnote{ margin-top:6px; }
+
+  /* combos */
+  .combo-list{ display:grid; gap:10px; margin-top:20px; }
+  .combo-row{
+    display:flex; gap:14px; align-items:baseline; justify-content:space-between;
+    padding:14px 16px; background:var(--bg-elevated); border:1px solid var(--border); border-radius:8px;
+  }
+  .combo-num{
+    font-family:var(--display); color:var(--sunset); font-size:1.1rem; flex:none; width:34px;
+  }
+  .combo-text{ flex:1; color:var(--text-muted); font-size:0.92rem; }
+  .combo-text b{ color:var(--text); }
+  .combo-price{ font-variant-numeric:tabular-nums; font-weight:700; color:var(--gold); white-space:nowrap; }
+
+  /* footer */
+  footer{ padding:30px 0 44px; text-align:center; }
+  footer p{ color:var(--text-faint); font-size:0.82rem; margin:0 0 6px; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="#top">Los <span>Amigos</span></a>
+    <ul class="navlinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu-top">Menu</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <p class="eyebrow">Dine-In Menu</p>
+    <h1>Los Amigos<br>Mexican Restaurant</h1>
+    <p class="tag">Family recipes, made to order</p>
+    <p class="lede">Browse our full menu below — burritos, enchiladas, fajitas, combination platters, and more, all made fresh. This page is for browsing only.</p>
+    <div class="browse-note">
+      <span><b>No online ordering.</b> Please call or visit us in person to place an order.</span>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <p class="eyebrow" style="margin-bottom:10px;">About Us</p>
+        <h2 style="font-size:1.9rem; margin-bottom:14px;">A neighborhood favorite</h2>
+        <p class="placeholder">[A short "our story" paragraph goes here — how long you've been open, what makes your kitchen's recipes special, anything you'd want a first-time visitor to know. Send it over and I'll drop it right in.]</p>
+        <div class="note-box">
+          <b>Good to know:</b> our Chile Verde is cooked with pork. Any item served "smothered" without a specified sauce will be smothered in Chile Verde by default — just let your server know if you'd like a different sauce. Items marked with an asterisk on our combination platters are filled with a chorizo-bean mix.
+        </div>
+      </div>
+      <div class="info-card">
+        <h3>Visit Us</h3>
+        <div class="info-row"><span class="k">Address</span><span class="v placeholder">[street address]</span></div>
+        <div class="info-row"><span class="k">Phone</span><span class="v placeholder">[phone number]</span></div>
+        <div class="info-row"><span class="k">Hours</span><span class="v placeholder">[general hours]</span></div>
+        <div class="info-row"><span class="k">Grill items</span><span class="v">11am–7:45pm Mon–Fri<br>11am–2:45pm Sat</span></div>
+        <div class="info-row"><span class="k">Fajitas</span><span class="v">Dine-in only</span></div>
+        <div class="info-row"><span class="k">Chips &amp; salsa</span><span class="v">Included with orders $9+<br>$2.00 per refill otherwise</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div id="menu-top"></div>
+  <nav class="menu-jump">
+    <div class="wrap">
+      <a class="jump-chip" href="#burritos">Burritos</a>
+      <a class="jump-chip" href="#enchiladas">Enchiladas</a>
+      <a class="jump-chip" href="#tacos">Tacos</a>
+      <a class="jump-chip" href="#ala-carte">Ala Carte</a>
+      <a class="jump-chip" href="#grill">From the Grill</a>
+      <a class="jump-chip" href="#fajitas">Fajitas</a>
+      <a class="jump-chip" href="#combos">Combination Platters</a>
+      <a class="jump-chip" href="#fries-apps">Fries &amp; Appetizers</a>
+      <a class="jump-chip" href="#salads">Salads</a>
+      <a class="jump-chip" href="#eggs">Egg Platters</a>
+      <a class="jump-chip" href="#desserts">Dessert</a>
+      <a class="jump-chip" href="#drinks">Drinks</a>
+      <a class="jump-chip" href="#sides">Side Orders</a>
+    </div>
+  </nav>
+
+  <!-- BURRITOS -->
+  <section class="menu-cat" id="burritos">
+    <div class="wrap">
+      <div class="cat-head">
+        <h2>Burritos</h2>
+        <p class="cat-note">Includes our chile verde sauce inside, which may have chunks of pork.</p>
+      </div>
+      <div class="price-table-wrap">
+        <table class="price-table">
+          <thead>
+            <tr><th>Burrito</th><th>Plain</th><th>Smothered w/ Chile Verde</th><th>w/ Cheese</th><th>w/ Onions</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="name">Bean and Cheese</td><td class="price">$4.99</td><td class="price">$5.99</td><td class="price">$6.79</td><td class="price">$6.99</td></tr>
+            <tr><td class="name">Bean</td><td class="price">$4.19</td><td class="price">$4.99</td><td class="price">$5.99</td><td class="price">$6.29</td></tr>
+            <tr><td class="name">Beef or Chicken</td><td class="price">$5.29</td><td class="price">$6.69</td><td class="price">$7.49</td><td class="price">$7.69</td></tr>
+            <tr><td class="name">Shredded Beef</td><td class="price">$5.29</td><td class="price">$6.99</td><td class="price">$7.89</td><td class="price">$7.99</td></tr>
+            <tr><td class="name">Sweet Pork</td><td class="price">$5.29</td><td class="price">$6.99</td><td class="price">$7.49</td><td class="price">$7.99</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="footnote">Ala carte items do not include rice or beans.</p>
+    </div>
+  </section>
+
+  <!-- ENCHILADAS -->
+  <section class="menu-cat" id="enchiladas">
+    <div class="wrap">
+      <div class="cat-head">
+        <h2>Enchiladas</h2>
+        <p class="cat-note">Comes with rice and beans.</p>
+      </div>
+      <div class="price-table-wrap">
+        <table class="price-table">
+          <thead><tr><th>Enchilada</th><th>Corn Tortilla</th><th>Flour Tortilla</th></tr></thead>
+          <tbody>
+            <tr><td class="name">Cheese</td><td class="price">$3.99</td><td class="price unclear">~$5.69*</td></tr>
+            <tr><td class="name">Chicken or Beef</td><td class="price">$4.29</td><td class="price unclear">~$7.69*</td></tr>
+            <tr><td class="name">Shredded Beef</td><td class="price">$4.89</td><td class="price">$7.99</td></tr>
+            <tr><td class="name">Sweet Pork</td><td class="price">$4.49</td><td class="price">$7.99</td></tr>
+            <tr><td class="name">Bean &amp; Cheese</td><td class="price">$4.39</td><td class="price">$6.69</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="footnote">*These two flour-tortilla prices were partly cut off in the source photo — worth double-checking against the physical menu before this goes live.</p>
+      <div class="callout">
+        <h3>Add Chile Verde (pork)</h3>
+        <p>Add chile verde with pork to any of the above for $0.99.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TACOS -->
+  <section class="menu-cat" id="tacos">
+    <div class="wrap">
+      <div class="cat-head"><h2>Tacos</h2></div>
+      <div class="price-table-wrap">
+        <table class="price-table">
+          <thead><tr><th>Taco</th><th>Crisp</th><th>Soft</th></tr></thead>
+          <tbody>
+            <tr><td class="name">Regular (beans, chorizo mix)</td><td class="price">$2.99</td><td class="price">$4.99</td></tr>
+            <tr><td class="name">Chicken</td><td class="price">$3.29</td><td class="price">$6.29</td></tr>
+            <tr><td class="name">Ground Beef</td><td class="price">$3.29</td><td class="price">$6.89</td></tr>
+            <tr><td class="name">Shredded Beef</td><td class="price">$3.99</td><td class="price">$6.99</td></tr>
+            <tr><td class="name">Veggie (guacamole, cheese, lettuce, tomato)</td><td class="price">$3.99</td><td class="price">$6.99</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- OTHER ALA CARTE -->
+  <section class="menu-cat" id="ala-carte">
+    <div class="wrap">
+      <div class="cat-head"><h2>Ala Carte, Chimichangas &amp; Burgers</h2></div>
+      <div class="item-list">
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Chicken or Shredded Beef Flautas (4)</div><div class="item-desc">Topped with sour cream, lettuce, tomatoes, and guacamole.</div></div>
+          <div class="item-price unclear">price unclear<small>check menu</small></div>
+        </div>
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Pork Tamale</div><div class="item-desc">Covered with your choice of chile verde or enchilada sauce.</div></div>
+          <div class="item-price">$4.29</div>
+        </div>
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Chile Relleno</div></div>
+          <div class="item-price">$4.29</div>
+        </div>
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Quesadilla — Cheese</div></div>
+          <div class="item-price">$3.29</div>
+        </div>
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Quesadilla — Chicken or Beef</div></div>
+          <div class="item-price">$5.89</div>
+        </div>
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Chimichanga — Shredded Chicken</div><div class="item-desc">Served with lettuce, tomato, guacamole and sour cream, covered in your choice of enchilada sauce or chile verde.</div></div>
+          <div class="item-price">$8.29</div>
+        </div>
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Chimichanga — Shredded Beef</div><div class="item-desc">Same as above.</div></div>
+          <div class="item-price">$9.29</div>
+        </div>
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Hamburger with Fries</div></div>
+          <div class="item-price">$6.29</div>
+        </div>
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Cheeseburger with Fries</div><div class="item-desc">All burgers come with hand-cut fries.</div></div>
+          <div class="item-price">$7.29</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FROM THE GRILL -->
+  <section class="menu-cat" id="grill">
+    <div class="wrap">
+      <div class="cat-head">
+        <h2>From the Grill</h2>
+        <p class="cat-note">Served 11am–7:45pm Monday–Friday, until 2:45pm Saturday. Items in this section take a little longer to cook.</p>
+      </div>
+      <div class="item-list">
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">3 Carne Asada Tacos</div><div class="item-desc">Topped with pico de gallo, served with rice and beans. Extra tacos available for a small upcharge.</div></div>
+          <div class="item-price">$10.99</div>
+        </div>
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Carne Asada Smothered Burrito with Cheese</div><div class="item-desc">Served with rice and beans. Two burritos: $19.99.</div></div>
+          <div class="item-price">$13.99</div>
+        </div>
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Ranchero Burrito</div><div class="item-desc">Chicken fajita meat grilled with onions and peppers, rolled in a hand-made flour tortilla covered in our ranchera sauce. Served with rice, beans, lettuce, and tomato.</div></div>
+          <div class="item-price">$13.99</div>
+        </div>
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Chicken or Beef Flautas</div><div class="item-desc">4 corn tortillas rolled with your choice of meat, grilled and topped with lettuce, tomatoes, guacamole, and sour cream. Served with rice and beans.</div></div>
+          <div class="item-price">$11.49</div>
+        </div>
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Chicken Fajita Taco Salad</div><div class="item-desc">Chicken fajita meat grilled with onions and peppers, served with beans, cheese, lettuce, and tomato in a crunchy taco bowl.</div></div>
+          <div class="item-price">$11.29</div>
+        </div>
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Chicken Fajita Salad</div><div class="item-desc">Chicken fajita meat grilled with peppers and onions, served on a bed of lettuce, topped with tomatoes and shredded cheddar. Add guacamole +$1.49, extra chicken $10.99.</div></div>
+          <div class="item-price">$9.49</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAJITAS -->
+  <section class="menu-cat" id="fajitas">
+    <div class="wrap">
+      <div class="cat-head">
+        <h2>Fajitas</h2>
+        <p class="cat-note">Dine-in only. Cooked with bell pepper and onions on a sizzling skillet, in butter. Includes rice, beans, and 2 flour tortillas.</p>
+      </div>
+      <div class="item-list">
+        <div class="item-row"><div class="item-main"><div class="item-name">Chicken</div></div><div class="item-price">$15.99</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Beef</div></div><div class="item-price">$16.99</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Mixed</div><div class="item-desc">Includes 5 shrimp.</div></div><div class="item-price">$18.29</div></div>
+      </div>
+      <p class="footnote">The first round of chips and salsa is complimentary; extra chips and salsa are $2.00 per refill.</p>
+    </div>
+  </section>
+
+  <!-- COMBINATION PLATTERS -->
+  <section class="menu-cat" id="combos">
+    <div class="wrap">
+      <div class="cat-head">
+        <h2>Combination Platters</h2>
+        <p class="cat-note">All smothered burritos have chile verde, which may have chunks of pork.</p>
+      </div>
+
+      <p class="footnote" style="margin-top:0; margin-bottom:10px; font-weight:700; color:var(--text-muted);">Without rice and beans</p>
+      <div class="combo-list">
+        <div class="combo-row"><span class="combo-num">1</span><span class="combo-text">Ground beef soft taco, cheese enchilada, and a chicken taco</span><span class="combo-price">$13.99</span></div>
+        <div class="combo-row"><span class="combo-num">2</span><span class="combo-text">Bean and cheese burrito, smothered bean burrito w/cheese, and a chicken enchilada</span><span class="combo-price">$15.99</span></div>
+        <div class="combo-row"><span class="combo-num">3</span><span class="combo-text unclear">Enchilada, regular taco*, tostada*, bean &amp; chile verde burrito <em>(item name partly obscured in photo)</em></span><span class="combo-price">$11.99</span></div>
+        <div class="combo-row"><span class="combo-num">4</span><span class="combo-text">Ground beef enchilada, chicken smothered burrito w/cheese, &amp; a regular soft taco*</span><span class="combo-price">$16.29</span></div>
+        <div class="combo-row"><span class="combo-num">5</span><span class="combo-text">Shredded beef smothered burrito w/cheese, chile relleno, and a cheese enchilada</span><span class="combo-price">$16.29</span></div>
+      </div>
+
+      <p class="footnote" style="margin-top:28px; margin-bottom:10px; font-weight:700; color:var(--text-muted);">With rice and beans</p>
+      <div class="combo-list">
+        <div class="combo-row"><span class="combo-num">6</span><span class="combo-text">Ground beef soft taco, chicken enchilada</span><span class="combo-price">$14.99</span></div>
+        <div class="combo-row"><span class="combo-num">7</span><span class="combo-text">Chile relleno, smothered bean burrito with cheese</span><span class="combo-price">$13.99</span></div>
+        <div class="combo-row"><span class="combo-num">8</span><span class="combo-text">Smothered bean burrito with cheese, cheese enchilada</span><span class="combo-price">$12.99</span></div>
+        <div class="combo-row"><span class="combo-num">9</span><span class="combo-text">Smothered bean burrito with cheese, cheese enchilada, chile relleno</span><span class="combo-price">$15.99</span></div>
+        <div class="combo-row"><span class="combo-num">10</span><span class="combo-text">Chicken smothered burrito with cheese, cheese enchilada, regular taco</span><span class="combo-price">$16.89</span></div>
+        <div class="combo-row"><span class="combo-num">★</span><span class="combo-text"><b>Agustin's Combination</b> — taco*, tostada*, enchilada, bean and chile verde burrito</span><span class="combo-price">$13.29</span></div>
+      </div>
+
+      <p class="footnote">$1.99 per substitution — only one substitution per combination.</p>
+      <p class="footnote">Items marked with * are filled with a chorizo-bean mix.</p>
+    </div>
+  </section>
+
+  <!-- FRIES & APPETIZERS -->
+  <section class="menu-cat" id="fries-apps">
+    <div class="wrap">
+      <div class="cat-head"><h2>Fries &amp; Appetizers</h2></div>
+      <div class="item-list">
+        <div class="item-row"><div class="item-main"><div class="item-name">French Fries with Cheese</div></div><div class="item-price">$4.99</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Chile Verde Fries</div><div class="item-desc">French fries topped with chile verde.</div></div><div class="item-price">$6.49</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Los Amigos Fries</div><div class="item-desc">Fries topped with chile verde, sour cream, and a scoop of guacamole.</div></div><div class="item-price">$8.59</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Beans with Melted Cheese</div></div><div class="item-price">$2.99</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Nachos</div><div class="item-desc">Crunchy tortilla chips covered in cheddar cheese.</div></div><div class="item-price">$5.29</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Special Nachos</div><div class="item-desc">Crunchy tortilla chips loaded with lettuce, tomatoes, sour cream, and guacamole.</div></div><div class="item-price">$10.29</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Jr. Special Nachos</div><div class="item-desc">Half order of the special nachos.</div></div><div class="item-price">$6.99</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Extra Chips</div></div><div class="item-price">$1.00</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Extra Salsa</div></div><div class="item-price">$1.00</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SALADS -->
+  <section class="menu-cat" id="salads">
+    <div class="wrap">
+      <div class="cat-head"><h2>Salads</h2></div>
+      <div class="item-list">
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Los Sweet Pork Taco Salad</div><div class="item-desc">Our own sweet pork recipe, served in a crunchy taco salad bowl with rice, beans, lettuce, tomato, cheese, sour cream, and guacamole.</div></div>
+          <div class="item-price">$10.99</div>
+        </div>
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Taco Salad</div><div class="item-desc">Beans, cheese, lettuce, tomato, sour cream, and guacamole in a crunchy taco bowl. Chicken or ground beef $10.29, shredded beef $11.29.</div></div>
+          <div class="item-price">from $10.29</div>
+        </div>
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Shredded Chicken or Ground Beef Salad</div><div class="item-desc">Lettuce, tomatoes, olives, cheese.</div></div>
+          <div class="item-price">$5.69</div>
+        </div>
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Guacamole Salad</div><div class="item-desc">Lettuce, tomatoes, olives, and cheese.</div></div>
+          <div class="item-price">$7.59</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EGG PLATTERS -->
+  <section class="menu-cat" id="eggs">
+    <div class="wrap">
+      <div class="cat-head">
+        <h2>Egg Platters</h2>
+        <p class="cat-note">Served only 11am–3pm.</p>
+      </div>
+      <div class="item-list">
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">3 Scrambled Eggs</div><div class="item-desc">With potatoes and one flour tortilla.</div></div>
+          <div class="item-price">$7.29</div>
+        </div>
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Egg Platter</div><div class="item-desc">2 fried or scrambled eggs, served with ham, potatoes, and one flour tortilla.</div></div>
+          <div class="item-price">$9.99</div>
+        </div>
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Huevos Rancheros</div><div class="item-desc">Eggs smothered in chile verde, served with beans and more — details and price were cropped out of our source photo.</div></div>
+          <div class="item-price unclear">check menu</div>
+        </div>
+      </div>
+      <p class="footnote">Food safety notice: our menu includes items made with non–gluten-free ingredients. Consuming raw or undercooked meat, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions.</p>
+    </div>
+  </section>
+
+  <!-- DESSERTS -->
+  <section class="menu-cat" id="desserts">
+    <div class="wrap">
+      <div class="cat-head"><h2>Dessert</h2></div>
+      <div class="item-list">
+        <div class="item-row"><div class="item-main"><div class="item-name">Fried Ice Cream</div></div><div class="item-price">$3.99</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Ice Cream</div><div class="item-desc">2 scoops.</div></div><div class="item-price">$2.99</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DRINKS -->
+  <section class="menu-cat" id="drinks">
+    <div class="wrap">
+      <div class="cat-head"><h2>Drinks</h2></div>
+      <div class="item-list">
+        <div class="item-row"><div class="item-main"><div class="item-name">Horchata — 24 oz</div><div class="item-desc">Refill $1.29.</div></div><div class="item-price">$2.99</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Horchata — 32 oz</div><div class="item-desc">Foam cup, no refill.</div></div><div class="item-price">$3.49</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Horchata — 44 oz</div><div class="item-desc">Foam cup, no refill.</div></div><div class="item-price">$4.29</div></div>
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Bottled Mexican Drinks</div><div class="item-desc">Sangria, sidral (apple beer), fruit punch, strawberry, pineapple, or lime — depending on availability.</div></div>
+          <div class="item-price">$2.99</div>
+        </div>
+        <div class="item-row">
+          <div class="item-main"><div class="item-name">Fountain Drinks</div><div class="item-desc">Coke, Diet Coke, Dr Pepper, Diet Dr Pepper, Sprite, root beer, Fanta orange, fruit punch, pink lemonade, raspberry iced tea, cherry coke, vanilla coke, house-brewed iced tea. Large, in a to-go cup +$0.50.</div></div>
+          <div class="item-price">$2.59</div>
+        </div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Coffee</div></div><div class="item-price">$1.79</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIDE ORDERS -->
+  <section class="menu-cat" id="sides">
+    <div class="wrap">
+      <div class="cat-head">
+        <h2>Side Orders</h2>
+        <p class="cat-note">Extra sauces will be charged.</p>
+      </div>
+      <div class="item-list">
+        <div class="item-row"><div class="item-main"><div class="item-name">Beans</div></div><div class="item-price unclear">check menu</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Rice</div></div><div class="item-price unclear">check menu</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Cheese</div></div><div class="item-price unclear">~$0.79*</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Onions</div></div><div class="item-price">$0.79</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Lettuce and Tomatoes</div></div><div class="item-price">$1.79</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Sour Cream</div></div><div class="item-price">$0.99</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Fries</div></div><div class="item-price">$3.49</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Guacamole</div></div><div class="item-price">$4.29</div></div>
+        <div class="item-row"><div class="item-main"><div class="item-name">Amigos Ranch</div></div><div class="item-price">$0.79</div></div>
+      </div>
+      <p class="footnote">*A glare in the source photo made a few of these (Beans, Rice, Cheese) hard to read exactly — worth confirming before publishing.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <p>Menu and prices shown for browsing only and subject to change — please confirm with the restaurant before visiting.</p>
+  <p>© <span id="year"></span> Los Amigos Mexican Restaurant.</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  var links = document.querySelectorAll('.navlinks a, .jump-chip');
+  var sections = document.querySelectorAll('section[id], .menu-cat[id]');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          links.forEach(function(a){
+            a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id);
+          });
+        }
+      });
+    }, { rootMargin: '-40% 0px -50% 0px' });
+    sections.forEach(function(s){ io.observe(s); });
+  }
+</script>
+
+</body>
+</html>

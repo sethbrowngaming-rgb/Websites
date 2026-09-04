@@ -3,6 +3,7 @@
 Personal collection of websites — one folder per project, named for the site it holds.
 
 **Portfolio:** https://sethbrowngaming-rgb.github.io/Websites/portfolio/
+**Los Amigos Mexican Restaurant:** https://sethbrowngaming-rgb.github.io/Websites/los-amigos/
 
 ## Layout
 
@@ -11,6 +12,14 @@ Personal collection of websites — one folder per project, named for the site i
   web projects (Zebonastic), side ventures (PixelBeadCo), toolkit, education, and
   contact/social links. `portfolio/ads.txt` is its AdSense publisher declaration
   (pub-3358856676053073).
+- `los-amigos/` — menu site for Los Amigos Mexican Restaurant. Browsing only, no
+  online ordering. Menu content was transcribed from photographed menu pages — a
+  handful of prices/descriptions were partly obscured by glare or cropping and are
+  flagged inline on the page itself (search "check menu" / marked with `*`) — worth
+  confirming against the physical menu before treating this as final. The About
+  section also has placeholders for address, phone, hours, and a restaurant story
+  blurb, waiting on real details. `los-amigos/ads.txt` carries the same AdSense
+  publisher id as `portfolio/`.
 
 No files live loose at the repo root — just this README and one folder per site, so
 `/` stays a clean list of projects as more get added.
